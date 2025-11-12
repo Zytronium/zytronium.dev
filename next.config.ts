@@ -1,7 +1,15 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    unoptimized: true, // For development; remove in production if using Next.js Image Optimization
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'zytronium.dev',
+      },
+    ],
+  },
   reactCompiler: true,
 };
 
