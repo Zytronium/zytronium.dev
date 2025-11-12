@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     title: 'About Zytronium',
     description: "Zytronium's developer website",
     url: 'https://zytronium.dev/',
-    siteName: 'Zytronium Portfolio',
+    siteName: 'Zytronium Developer Portfolio',
     images: [
       {
         url: 'https://zytronium.dev/images/zytronium_dev_logo_wallpaper.png',
