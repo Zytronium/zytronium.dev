@@ -55,26 +55,6 @@ export default function HomePage() {
         <section className="text-center mb-16 bg-[#0a061d]/50 backdrop-blur-sm rounded-2xl p-8 border border-[#27234c]">
           <h2 className="text-3xl font-bold mb-4">Contact Me</h2>
           <p className="text-gray-400 mb-6">Bot-protected contact section coming soon.</p>
-          <div className="flex justify-center gap-6">
-            <a
-              href="https://github.com/zytronium"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-400 hover:text-blue-300 flex items-center gap-2"
-            >
-              <Github className="w-5 h-5" />
-              GitHub
-            </a>
-            <a
-              href="https://discord.gg/nMXxW5xVM4"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-400 hover:text-blue-300 flex items-center gap-2"
-            >
-              <ExternalLink className="w-5 h-5" />
-              Discord
-            </a>
-          </div>
         </section>
       </div>
     </div>
