@@ -5,9 +5,25 @@ export const projects: Project[] = [
   {
     id: 'satire-dev-blog',
     title: 'Satire Dev Blog',
-    description: 'My personal satire dev blog with a futuristic theme and a lot of totally good advice, like how to fix bugs with duct tape.',
+    description:
+      'My personal satire dev blog with a futuristic theme and a lot of totally ' +
+      'good advice, like how to fix bugs with duct tape.',
     fullDescription:
-      'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+      'This is my own personal dev blog... Or is it? Actually, it\'s my satire ' +
+      'dev blog of course. Nothing serious goes here. No advice should be taken ' +
+      'literally; in fact, most advice here should be taken as if it were opposite ' +
+      'day. I\'ve found I have a knack for satire writing, so I made a website to ' +
+      'post my own satire works, by a developer for developers. One of my favorite ' +
+      'posts here is "Let Me Be Clear," which has some unique behavior when you ' +
+      'open the post.' +
+      '\n(pretend there\'s a line break here; this page doesn\'t support line breaks yet) \n' +
+      'Built with Next.js, React, and TailwindCSS, it uses a custom JSON database ' +
+      'to store posts. The blog posts are written in Markdown and rendered as HTML ' +
+      'on the client. There\'s also a search bar with fuzzy search that searches by ' +
+      'post title, tags, or keywords inside the post itself, much like a search ' +
+      'engine. The light/dark mode switch is actually a lamp pull string, which I ' +
+      'thought was pretty clever. The website\'s theme is a futuristic futuristic ' +
+      'futuristic futuristic - why does my AI autocomplete keep saying futuristic?',
     tags: ['JavaScript', 'Next.js', 'React', 'TailwindCSS', 'Humor', 'Database'],
     links: {
       live: 'https://satire.zytronium.dev/'
