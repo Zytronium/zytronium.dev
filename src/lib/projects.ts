@@ -16,7 +16,7 @@ export const projects: Project[] = [
       'a fun, safe, and engaging dogfight. The mobile app is built with React Native, ' +
       'desktop app with Electron and Next.js, and our firmware built in C++ and Python. ' +
       '\n\n' +
-      'Cameras mounted onto the planes are used to detect and track the opponents jet, ' +
+      'Cameras mounted onto the planes are used to detect and track the opponent\'s jet, ' +
       'by locking onto lights installed on the enemy plane and sending a "hit" signal ' +
       'to the local game server. The server then sends the updated score in real time ' +
       'to the mobile app for spectators to see. As a stretch goal, we also plan to ' +
