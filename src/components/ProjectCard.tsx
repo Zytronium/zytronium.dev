@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import { ExternalLink, Github } from 'lucide-react';
 import { Project } from '@/types/project';
@@ -11,9 +11,28 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {
+  const router = useRouter();
+
+  function goToProject() {
+    router.push(`/projects/${project.id}`);
+  }
+
+  function handleKeyDown(e: React.KeyboardEvent<HTMLDivElement>) {
+    // Support Enter and Space to activate card like a link
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      goToProject();
+    }
+  }
+
   return (
-    <Link href={`/projects/${project.id}`}>
-      <div className="bg-[#12102d] rounded-xl p-5 border border-[#27234c] hover:border-purple-600 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-purple-600/20 cursor-pointer h-full flex flex-col">
+    <div
+      role="link"
+      tabIndex={0}
+      onClick={goToProject}
+      onKeyDown={handleKeyDown}
+      className="bg-[#12102d] rounded-xl p-5 border border-[#27234c] hover:border-purple-600 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-purple-600/20 cursor-pointer h-full flex flex-col"
+    >
         <div className="relative w-full h-48 mb-3 rounded-lg overflow-hidden">
           <Image
             src={project.image || `/api/placeholder/400/250`}
@@ -23,9 +42,11 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             unoptimized
           />
         </div>
+
         <h3 className="text-xl font-bold text-[#e4be32] mb-2">{project.title}</h3>
-        <p className="text-gray-400 text-sm mb-4 line-clamp-3 flex-grow">{project.description}</p>
-        <div className="flex flex-wrap gap-2" onClick={(e) => e.preventDefault()}>
+      <p className="text-gray-400 text-sm mb-4 line-clamp-3 flex-grow">{project.description}</p>
+
+      <div className="flex flex-wrap gap-2">
           {project.links.github && (
             <a
               href={project.links.github}
@@ -52,6 +73,5 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           )}
         </div>
       </div>
-    </Link>
   );
 }
