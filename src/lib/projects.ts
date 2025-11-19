@@ -3,6 +3,33 @@ import { Project } from '@/types/project';
 export const projects: Project[] = [
 
   {
+    id: 'aeroduel',
+    title: 'Aeroduel',
+    description:
+      'Advanced RC aerial combat powered by computer vision, match servers, and custom-built RC jets.',
+    fullDescription:
+      'Aeroduel is my capstone project at Atlas School that me and 4 other software ' +
+      'engineers are currently working on. It combines hardware and software to ' +
+      'create an advanced RC aerial dogfight game with real RC planes. Players ' +
+      'can register their planes with the mobile app, host a match with the desktop ' +
+      'app, join matches on the local network, and compete against other players in ' +
+      'a fun, safe, and engaging dogfight. The mobile app is built with React Native, ' +
+      'desktop app with Electron and Next.js, and our firmware built in C++ and Python. ' +
+      '\n\n' +
+      'Cameras mounted onto the planes are used to detect and track the opponents jet, ' +
+      'by locking onto lights installed on the enemy plane and sending a "hit" signal ' +
+      'to the local game server. The server then sends the updated score in real time ' +
+      'to the mobile app for spectators to see. As a stretch goal, we also plan to ' +
+      'support FPV camera on the jets, live video feed of these cameras for spectators ' +
+      'to watch and replay, screenshots of each hit, and more.',
+    tags: ['JavaScript', 'TypeScript', 'Python', 'Next.js', 'React', 'TailwindCSS', 'Electron', 'Aviation', 'Engineering', 'Capstone'],
+    links: {
+      live: 'https://aeroduel.github.io/',
+      github: 'https://github.com/aeroduel/'
+    },
+    image: '/images/project_thumbnails/aeroduel.png'
+  },
+  {
     id: 'satire-dev-blog',
     title: 'Satire Dev Blog',
     description:
