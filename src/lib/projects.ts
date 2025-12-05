@@ -8,7 +8,7 @@ export const projects: Project[] = [
     description:
       'Advanced RC aerial combat powered by computer vision, match servers, and custom-built RC jets.',
     fullDescription:
-      'Aeroduel is my capstone project at Atlas School that me and 4 other software ' +
+      'Aeroduel is my capstone project at Atlas School that me and 3 other software ' +
       'engineers are currently working on. It combines hardware and software to ' +
       'create an advanced RC aerial dogfight game with real RC planes. Players ' +
       'can register their planes with the mobile app, host a match with the desktop ' +
@@ -24,7 +24,7 @@ export const projects: Project[] = [
       'to watch and replay, screenshots of each hit, and more.',
     tags: ['JavaScript', 'TypeScript', 'Python', 'Next.js', 'React', 'TailwindCSS', 'Electron', 'Aviation', 'Engineering', 'Capstone'],
     links: {
-      live: 'https://aeroduel.github.io/',
+      live: 'https://aeroduel.com/',
       github: 'https://github.com/aeroduel/'
     },
     image: '/images/project_thumbnails/aeroduel.png'
