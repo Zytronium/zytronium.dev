@@ -21,13 +21,16 @@ export const projects: Project[] = [
       'to the local game server. The server then sends the updated score in real time ' +
       'to the mobile app for spectators to see. As a stretch goal, we also plan to ' +
       'support FPV camera on the jets, live video feed of these cameras for spectators ' +
-      'to watch and replay, screenshots of each hit, and more.',
+      'to watch and replay, screenshots of each hit, and more. ' +
+      '\n\n' +
+      'While our demo day was December 11th, 2025, we are still casually working on the ' +
+      'project and intent to complete it. There is no official goal for date of completion.',
     tags: ['JavaScript', 'TypeScript', 'Python', 'Next.js', 'React', 'TailwindCSS', 'Electron', 'Aviation', 'Engineering', 'Capstone'],
     links: {
       live: 'https://aeroduel.com/',
-      github: 'https://github.com/aeroduel/'
+      github: 'https://github.com/Aeroduel/'
     },
-    image: '/images/project_thumbnails/aeroduel.png'
+    image: '/images/project_thumbnails/aeroduel_server.webp'
   },
   {
     id: 'satire-dev-blog',
