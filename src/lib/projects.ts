@@ -25,7 +25,7 @@ export const projects: Project[] = [
       '\n\n' +
       'While our demo day was December 11th, 2025, we are still casually working on the ' +
       'project and intend to complete it. There is no official goal for date of completion.',
-    tags: ['JavaScript', 'TypeScript', 'Python', 'Next.js', 'React', 'TailwindCSS', 'Electron', 'Aviation', 'Engineering', 'Capstone'],
+    tags: ['JavaScript', 'TypeScript', 'Python', 'Next.js', 'React', 'TailwindCSS', 'Electron', 'Aviation', 'Engineering', 'Arduino', 'C++', 'Capstone'],
     links: {
       live: 'https://aeroduel.com/',
       github: 'https://github.com/Aeroduel/'
