@@ -45,8 +45,8 @@ export const projects: Project[] = [
       'day. I\'ve found I have a knack for satire writing, so I made a website to ' +
       'post my own satire works, by a developer for developers. One of my favorite ' +
       'posts here is "Let Me Be Clear," which has some unique behavior when you ' +
-      'open the post.' +
-      '\n(pretend there\'s a line break here; this page doesn\'t support line breaks yet) \n' +
+      'open the post. ' +
+      '\n\n' +
       'Built with Next.js, React, and TailwindCSS, it uses a custom JSON database ' +
       'to store posts. The blog posts are written in Markdown and rendered as HTML ' +
       'on the client. There\'s also a search bar with fuzzy search that searches by ' +
@@ -160,30 +160,45 @@ export const projects: Project[] = [
     title: 'The Faction Nexus',
     description: 'A web hub for Starscape factions and their community with an integrated Discord bot.',
     fullDescription:
-      'The Faction Nexus is a work-in-progress passion project dedicated to player ' +
+      'The Faction Nexus is a 1-year long passion project dedicated to player ' +
       'factions in the Roblox game, Starscape, as well as a Starscape-inspired ' +
       'game, Constellia. The Faction Nexus serves as a central hub for the ' +
       'Starscape and Constellia community, especially their in-game factions. It ' +
-      'features faction profiles, news articles, and more. It provies find ' +
+      'features faction profiles, news articles, and more. It lets users find ' +
       'information on different factions and alliances and helps users stay up to ' +
       'date with the latest Starscape and Constellia news. Thanks to a partnership ' +
       'with Constellia\'s lead developer, players can actually link their ' +
       'Constellia faction data directly to The Faction Nexus\' database, ' +
       'enabling instant data uploading, easy faction removal, instant data ' +
-      'updates, and guaranteed accuracy. While this is still a major ' +
-      'work-in-progress, users can add their factions to our database, search ' +
-      'for factions, set faction relations, and publish news articles. In the ' +
-      'future users will be able to create faction treaties or agreements, view a ' +
+      'updates, and guaranteed accuracy. ' +
+      '\n\n' +
+      'The website also features an account system, allowing users to create an ' +
+      'account with email and password authentication, with nearly 50 users having ' +
+      'accounts by the end of 2025. With an account, users can link their Roblox ' +
+      'and Discord accounts to their Faction Nexus account, allowing them to ' +
+      'manage their Constellia faction, and (as part of a feature that was almost ' +
+      'complete when development ceased) upload and edit their Starscape factions directly ' +
+      'on the website securely without filling out a Google form or contacting ' +
+      'an admin over Discord.' +
+      '\n\n' +
+      'While the project was unfortunately never fully completed, ' +
+      'users can add their factions to the database, search for factions, set ' +
+      'faction relations, and publish news articles. There were also plans for ' +
+      'users to be able to create faction treaties or agreements, view a ' +
       'faction relation web auto-generated from these relations, post faction ads, ' +
-      'create and advertise events, and more! While most of these features are not ' +
-      'currently ready, nor guaranteed, they are planned to be implemented at some ' +
-      'point and are listed on the official development roadmap. The planned ' +
-      'Discord bot, when completed, will also allow users to subscribe to news ' +
-      'outlets and interact with the platform directly from Discord. This is an ' +
-      'active major personal project as of November 2025.',
+      'create and advertise events, and more. The Discord bot, if completed, ' +
+      'would also allow users to subscribe to news outlets and interact with the ' +
+      'platform directly from Discord. The project began on December 11, 2024, and, ' +
+      'due to both Starscape and Constellia no longer having an active playerbase, ' +
+      'ceased development in December 2025 and moved from thefactionnexus.tech ' +
+      'to thefactionnexus.zytronium.dev to save money. As unfortunate as it was to ' +
+      'have to cease development, this is my longest continuous project yet (if you ' +
+      'don\'t count breaks in development as part of the development time) and ' +
+      'I\'m proud of what I accomplished with it while simultaneously doing the ' +
+      'best I could on my assignments in coding school.',
     tags: ['Express.js', 'Firebase Auth', 'Firebase Firestore', 'Discord.py', 'Published'],
     links: {
-      live: 'https://thefactionnexus.tech/home'
+      live: 'https://thefactionnexus.zytronium.dev/home'
     },
     image: '/images/project_thumbnails/tfn.webp'
   },

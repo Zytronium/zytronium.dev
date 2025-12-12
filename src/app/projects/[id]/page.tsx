@@ -79,7 +79,7 @@ export default async function Page({ params }: ProjectPageProps) {
           {project.fullDescription && (
             <div className="mb-6">
               <h2 className="text-2xl font-bold mb-3">About This Project</h2>
-              <p className="text-gray-400">{project.fullDescription}</p>
+              <p className="text-gray-400 whitespace-pre-line">{project.fullDescription}</p>
             </div>
           )}
 
