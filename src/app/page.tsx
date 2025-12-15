@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import ProjectCarousel from '@/components/ProjectCarousel';
 import { projects } from '@/lib/projects';
-import ContactSection from "@/app/components/ContactSection";
+import ContactSection from "@/components/ContactSection";
 
 export default function HomePage() {
   return (
