@@ -1,12 +1,11 @@
 import { Project } from '@/types/project';
 
 export const projects: Project[] = [
-
   {
     id: 'aeroduel',
     title: 'Aeroduel',
     description:
-      'Advanced RC aerial combat powered by computer vision, match servers, and custom-built RC jets.',
+      'Advanced RC aerial combat powered by computer vision, LAN servers, mobile apps, and custom-built RC jets. Fully open-source and built to be modded.',
     fullDescription:
       'Aeroduel is my capstone project at Atlas School that me and 3 other software ' +
       'engineers are currently working on. It combines hardware and software to ' +
@@ -22,6 +21,10 @@ export const projects: Project[] = [
       'to the mobile app for spectators to see. As a stretch goal, we also plan to ' +
       'support FPV camera on the jets, live video feed of these cameras for spectators ' +
       'to watch and replay, screenshots of each hit, and more. ' +
+      '\n\n' +
+      '• Supports up to 16 planes per match, intentionally limiting the number of planes for safety\n' +
+      '• Fully open-source and built to be hacked on\n' +
+      '• Works on RC planes, quadcopters, cars, tanks, 1:1 scale mobile surface-to-air missile launcher units, or any other RC vehicles or contraptions' +
       '\n\n' +
       'While our demo day was December 11th, 2025, we are still casually working on the ' +
       'project and intend to complete it. There is no official goal for date of completion.',
