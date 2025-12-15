@@ -11,6 +11,23 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+    color: #deecff;
+}
+.link:hover {
+    text-decoration: underline;
+}
+
+.link {
+    color: #b4c8ff;
+}
+
+.tiny-note {
+    font-size: 0.75rem;
+    color: #9ca3af;
+    margin-top: 0.5rem;
+}
+
 /* Scrollbar styling */
 ::-webkit-scrollbar {
     width: 14px;

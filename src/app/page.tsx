@@ -1,9 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Github, ExternalLink } from 'lucide-react';
 import ProjectCarousel from '@/components/ProjectCarousel';
 import { projects } from '@/lib/projects';
+import ContactSection from "@/app/components/ContactSection";
 
 export default function HomePage() {
   return (
@@ -27,8 +27,10 @@ export default function HomePage() {
             />
           </div>
           <p className="text-lg text-gray-300 max-w-3xl mx-auto mb-6">
-            Welcome to my personal developer website! I'm Zytronium, a passionate developer from Oklahoma who loves
-            programming, space, and gaming. This site serves as a home base for my projects, experiments, and
+            Welcome to my personal developer website! I&apos;m Zytronium, a
+            passionate developer from Oklahoma who loves
+            programming, space, and gaming. This site serves as a home base for my
+            projects, experiments, and
             developer identity.
           </p>
           <Link
@@ -52,10 +54,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="text-center mb-16 bg-[#0a061d]/50 backdrop-blur-sm rounded-2xl p-8 border border-[#27234c]">
-          <h2 className="text-3xl font-bold mb-4">Contact Me</h2>
-          <p className="text-gray-400 mb-6">Bot-protected contact section coming soon.</p>
-        </section>
+        <ContactSection />
       </div>
     </div>
   );
