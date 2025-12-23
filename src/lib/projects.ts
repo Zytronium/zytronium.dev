@@ -2,6 +2,33 @@ import { Project } from '@/types/project';
 
 export const projects: Project[] = [
   {
+    id: 'stellicast',
+    title: 'Stellicast',
+    description:
+      'A YouTube-like platform that doesn\'t invade user privacy, track or sell user ' +
+      'data, bombard users with too many ads, or block users with a VPN or ad-blocker.',
+    fullDescription:
+      'Stellicast is a YouTube alternative platform that aims to become a better version ' +
+      'of YouTube, getting rid of everything people dislike about YouTube and providing a ' +
+      'privacy-focused experience. It\'s built with Next.js, React, TailwindCSS, and ' +
+      'Bunny.net video storage/streaming. It\'s currently in early development and is not ' +
+      'yet ready for public use, however the goal is to be ready for a beta launch by the ' +
+      'end of 2026 or 2027.' +
+      '\n\n' +
+      'With a astronomically low budget, Stellicast currently plans to focus on earning ' +
+      'enough money to upkeep project infrastructure and hosting costs, but I would like ' +
+      'to earn some excess revenue to help motivate development and increase the budget. ' +
+      'Most of the money donated to my Buy Me A Coffee campaign will be used to pay for ' +
+      'Stellicast. If this is something you\'re interested in, please consider donating ' +
+      'at https://www.buymeacoffee.com/zytronium.',
+    tags: ['TypeScript', 'JavaScript', 'Next.js', 'React', 'TailwindCSS', 'Supabase', 'Video Streaming', 'Bunny.net'],
+    links: {
+      live: 'https://stellicast.vercel.app/about',
+      github: 'https://github.com/zytronium/stellicast'
+    },
+    image: '/images/project_thumbnails/stellicast.webp'
+  },
+  {
     id: 'aeroduel',
     title: 'Aeroduel',
     description:
