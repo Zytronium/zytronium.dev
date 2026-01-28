@@ -2,6 +2,37 @@ import { Project } from '@/types/project';
 
 export const projects: Project[] = [
   {
+    id: 'minecraft-rust-edition',
+    title: 'Minecraft: Vibed Edition',
+    description:
+      'A 90% AI generated early Minecraft clone built in Rust.',
+    fullDescription:
+      'Minecraft: Vibed edition is an experiment where I used Claude to AI generate ' +
+      'from scratch a Minecraft clone in Rust. I chose Rust for two reasons: first, ' +
+      'I\'m trying to learn Rust, and second, it\'s a fast language, which makes ' +
+      'great performance and world generation speed.' +
+      '\n\n' +
+      'As of the writing of this, I have been working on this project for 4 days ' +
+      'and already have world generation, basic creative and spectator modes, ' +
+      '9 different blocks, not including air, world save files, a pause menu, and ' +
+      'a main menu. While 99% of the code is AI generated, the block textures are ' +
+      '100% man-made. I created 8x8 block textures to make it easier and faster to ' +
+      'draw textures, and I\'m surprised how good they look.' +
+      '\n\n' +
+      'While this project started out easy, as the codebase grew larger and larger, ' +
+      'getting Claude to understand the full context and provide large scale refactors ' +
+      'became more and more difficult, sometimes requiring a dozen prompts to get something ' +
+      'right, while it would only take 1-2 prompts on day 1.' +
+      '\n\n' +
+      'For more details, read the README.md on the GitHub repository. It outlines ' +
+      'the progress made each day.',
+    tags: ['Rust', 'AI', 'Prompt Engineering', 'Game Development', 'Minecraft'],
+    links: {
+      github: 'https://github.com/zytronium/minecraft_vibed_edition'
+    },
+    image: '/images/project_thumbnails/mcve.webp'
+  },
+  {
     id: 'stellicast',
     title: 'Stellicast',
     description:
