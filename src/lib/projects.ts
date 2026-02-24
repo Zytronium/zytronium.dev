@@ -2,6 +2,55 @@ import { Project } from '@/types/project';
 
 export const projects: Project[] = [
   {
+    id: 'starscape-text-adventure',
+    title: 'Starscape: Text Adventure',
+    description:
+      'A fan-made remake of the Roblox game, Starscape, but as a text adventure game.',
+    fullDescription:
+      'Starscape: Text Adventure is a singleplayer fan game based on the multiplayer ' +
+      'Roblox game, Starscape, originally by "Zolar Keth", AKA Ethan Witt. ' +
+      'The original Starscape is a 3D open-universe game with over 4,500 unique, ' +
+      'procedurally generated star systems. In Starscape, you can do just about ' +
+      'anything. You can mine asteroids for resources, fight ancient drones, ' +
+      'complete missions for different factions, help the warring nations fight ' +
+      'for territory, participate in massive player-versus-player space battles, ' +
+      'explore the natural beauty of the galaxy, find hidden lore-heavy secrets ' +
+      'in deep space, and much more. It\'s an amazing game that is, in my opinion, ' +
+      'one of the most underrated games on Roblox. Starscape Text Adventure shares ' +
+      'most of these features, but transformed into text-based gameplay. It even ' +
+      'includes realtime text-based combat, using your number pad or arrow keys ' +
+      'to dodge enemy fire and holding the space bar to fire back.' +
+      '\n\n' +
+      'The original Starscape, at the time of making this game, is a sadly dying ' +
+      'game. Its developer rarely updates the game, the marketplace is shut down ' +
+      'due to exploits and lack of time to patch them, and the active player count ' +
+      'is the lowest its been since it first released. Starscape: Text Adventure ' +
+      'uses this as part of its core lore. In this game, the game has completely ' +
+      'died. You are the last real player, but you play anyway because you can ' +
+      'appreciate such a gem of a game, even when some of the core mechanics ' +
+      'don\'t function with no players. That\'s okay, because the core mechanics ' +
+      'have changed to work well in singleplayer now. Everyone else is an NPC. ' +
+      'You rule the galaxy.' +
+      '\n\n' +
+      'Starscape: Text Adventure utilizes Pygame for immersive audio, reusing ' +
+      'the same soundtrack used in the original Starscape. It even saves your ' +
+      'progress so you can come back and continue later, or start another save ' +
+      'and start from scratch.' +
+      '\n\n' +
+      'The game also has its own website where you can download it for Windows ' +
+      'or Linux. Once downloaded, there\'s no need to return to the website to ' +
+      'update; the game can update itself! There\'s also a native installer ' +
+      'built in Rust, so you can find the game in your app launcher easily. ' +
+      'Go ahead and try it out and live the greatest space adventure one could ' +
+      'imagine!',
+    tags: ['Python', 'Game Development', 'Pygame', 'Rust'],
+    links: {
+      github: 'https://github.com/zytronium/starscape_text_adventure',
+      live: 'https://starscape.zytronium.dev/'
+    },
+    image: '/images/project_thumbnails/starscape_text_adventure.webp'
+  },
+  {
     id: 'minecraft-rust-edition',
     title: 'Minecraft: Vibed Edition',
     description:
