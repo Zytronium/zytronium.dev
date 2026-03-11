@@ -36,12 +36,12 @@ export default function AboutPage() {
           <h1 className="text-4xl font-bold mb-6">About Zytronium</h1>
 
           <div className="flex flex-col md:flex-row gap-8 mb-8">
-            <div className="relative w-48 h-48 mx-auto md:mx-0 flex-shrink-0">
+            <div className="relative w-48 h-48 mx-auto md:mx-0 shrink-0">
               <Image
                 src="/images/zytronium_dev_logo_rounded.png"
                 alt="Zytronium"
                 fill
-                className="rounded-[5rem] border-2 border-[#27234c]"
+                className="rounded-[5.5rem] border-2 border-[#27234c]"
                 unoptimized
               />
             </div>
