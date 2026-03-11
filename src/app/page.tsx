@@ -22,7 +22,7 @@ export default function HomePage() {
               src="/images/zytronium_dev_logo_rounded.png"
               alt="Zytronium Profile Picture"
               fill
-              className="rounded-[5rem] border-2 border-[#27234c]"
+              className="rounded-[5.5rem] border-2 border-[#27234c]"
               unoptimized
             />
           </div>
