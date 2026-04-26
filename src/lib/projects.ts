@@ -2,6 +2,53 @@ import { Project } from '@/types/project';
 
 export const projects: Project[] = [
   {
+    id: 'luminous',
+    title: 'Luminous',
+    description:
+      'A chat app for Atlas School alumni with cross-application messaging',
+    fullDescription:
+        'Luminous, named after the Atlas School mascot, Lumi, is an online chat platform ' +
+        'exclusively for Atlas School students and alumni. Built primarily with Next.js, ' +
+        'Express.js, React, Electron, and Discord.py, it aims to unify the Atlas School ' +
+        'alumni community by bridging the gap between the alumni Discord server and the ' +
+        'Root community that split off from it in the midst of Discord controversy. ' +
+        '\n\n' +
+        'Luminous will provide us with our own custom-built chat platform so we have total ' +
+        'control and privacy. Its currently experimental cross-application chat bridges ' +
+        'messages sent on our Discord server directly to our Luminous app and vice versa, ' +
+        'allowing users who don\'t migrate to Luminous to have seamless communication with ' +
+        'users who migrate to Luminous. It\'s also planned to bridge Root messages as well, ' +
+        'but that has not yet been implemented. Once fully implemented, the Luminous bridge ' +
+        'will allow seamless real-time communication between all three platforms.' +
+        '\n\n' +
+        'The experimental Discord bridge currently works via Discord bot and a webhook. ' +
+        'This Discord bot listens to the WebSocket from our Supabase realtime database ' +
+        'to provide live messaging in the connected channel(s) from Luminous to Discord. ' +
+        'At the same time, the Discord bot listens to Discord messages sent in the connected ' +
+        'channels(s) and sends them to Luminous in real time.' +
+        '\n\n' +
+        'Luminous is not just a cross-application messaging app, however. It\'s a private ' +
+        'hub for Atlas School alumni and students to communicate and plan events together. ' +
+        'All users must sign up with their school email address, and then verify their email. ' +
+        'This entirely prevents bot accounts and bad actors. Messages will also be end-to-end ' +
+        'encrypted, giving us extra privacy and security.' +
+        '\n\n' +
+        'Luminous is available on the web (desktop and mobile) and as an installable desktop ' +
+        'app for Windows and Linux. When running the desktop app, much like Discord, the app ' +
+        'has the optional ability to minimize to the system tray on close, keeping it running ' +
+        'in the background while listening for new messages and sending system notifications ' +
+        'when the user is mentioned.' +
+        '\n\n' +
+        'A team of volunteer alumni are actively collaborating on this project to make it our ' +
+        'own. The project has been ongoing since February, 2026.',
+    tags: ['TypeScript', 'Electron', 'Express.js', 'Next.js', 'React', 'TailwindCSS', 'Supabase', 'Database', "Python", "Discord.py", "Collaboration"],
+    links: {
+      github: 'https://github.com/zytronium/luminous',
+      live: 'https://luminous-chat.vercel.app/'
+    },
+    image: '/images/project_thumbnails/luminous.webp'
+  },
+  {
     id: 'starscape-text-adventure',
     title: 'Starscape: Text Adventure',
     description:
