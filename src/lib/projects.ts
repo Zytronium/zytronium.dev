@@ -1,5 +1,7 @@
 import { Project } from '@/types/project';
 
+export const networkingProjectIds = new Set(['rcon-bot', 'pycraft-rcon', 'faction-nexus']);
+
 export const projects: Project[] = [
   {
     id: 'luminous',

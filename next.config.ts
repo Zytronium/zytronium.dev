@@ -8,6 +8,18 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'zytronium.dev',
       },
+      {
+        protocol: 'https',
+        hostname: 'blog.zytronium.dev',
+      },
+      {
+        protocol: 'https',
+        hostname: 'satire.zytronium.dev',
+      },
+      {
+        protocol: 'https',
+        hostname: 'webworks.zytronium.dev',
+      },
     ],
   },
   reactCompiler: true,

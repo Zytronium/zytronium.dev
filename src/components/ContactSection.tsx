@@ -31,15 +31,16 @@ export default function ContactSection() {
       } else {
         setContactInfo('CAPTCHA failed. Please try again.');
       }
-    } catch (error) {
+    } catch {
       setContactInfo('Error verifying CAPTCHA.');
     }
   };
 
   return (
-    <section className="text-center mb-16 bg-[#0a061d]/50 backdrop-blur-sm rounded-2xl p-8 border border-[#27234c]">
-      <h2 className="text-3xl font-bold mb-4">Contact Me</h2>
-      <p className="text-gray-400 mb-6">To reveal my contact information, please confirm you are not a bot.</p>
+    <section id="contact" className="contact-section reference-panel">
+      <p className="eyebrow">03 / Let’s connect</p>
+      <h2>Let’s work together</h2>
+      <p className="body-copy mb-6">For employers and collaborators: verify you are human to reveal my contact information.</p>
 
       <div className="flex justify-center mb-4">
         <HCaptcha

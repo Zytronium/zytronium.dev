@@ -31,9 +31,9 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       tabIndex={0}
       onClick={goToProject}
       onKeyDown={handleKeyDown}
-      className="bg-[#12102d] rounded-xl p-5 border border-[#27234c] hover:border-purple-600 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-purple-600/20 cursor-pointer h-full flex flex-col"
+      className="reference-card p-4 transition-all duration-300 cursor-pointer h-full flex flex-col"
     >
-        <div className="relative w-full h-48 mb-3 rounded-lg overflow-hidden">
+        <div className="relative w-full h-48 mb-3 overflow-hidden border border-primary/15">
           <Image
             src={project.image || `/api/placeholder/400/250`}
             alt={project.title}
@@ -43,7 +43,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           />
         </div>
 
-        <h3 className="text-xl font-bold text-[#e4be32] mb-2">{project.title}</h3>
+        <h3 className="text-xl font-bold text-primary-lighter mb-2">{project.title}</h3>
       <p className="text-gray-400 text-sm mb-4 line-clamp-3 flex-grow">{project.description}</p>
 
       <div className="flex flex-wrap gap-2">
