@@ -1,15 +1,8 @@
 import type { Metadata } from 'next';
-import { Quantico } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/Navbar';
 import BackgroundVenom from '@/components/BackgroundVenom';
 import Footer from '@/components/Footer';
-
-const quantico = Quantico({
-  weight: ['400', '700'],
-  subsets: ['latin'],
-  display: 'swap',
-});
 
 export const metadata: Metadata = {
   title: 'Zytronium - Developer Portfolio',
@@ -44,7 +37,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-    <body className={quantico.className}>
+    <body>
     <BackgroundVenom />
     <Navbar />
     <main className="min-h-screen">

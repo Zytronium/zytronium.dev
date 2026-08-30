@@ -1,7 +1,7 @@
 
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Search, ChevronLeft, ChevronRight } from 'lucide-react';
 import ProjectCard from '@/components/ProjectCard';
 import { projects } from '@/lib/projects';
@@ -30,14 +30,11 @@ export default function ProjectsPage() {
   const startIndex = (currentPage - 1) * projectsPerPage;
   const paginatedProjects = filteredProjects.slice(startIndex, startIndex + projectsPerPage);
 
-  useEffect(() => {
-    setCurrentPage(1);
-  }, [searchQuery]);
 
   return (
-    <div className="pt-20 px-4">
-      <div className="max-w-7xl mx-auto">
-        <h1 className="text-4xl font-bold text-center mb-8 mt-8">My Projects</h1>
+    <div className="page-shell">
+      <div className="content-wrap max-w-7xl">
+        <div className="section-heading mt-8"><p className="eyebrow">Archive / Experiments and products</p><h1>My projects</h1></div>
 
         <div className="mb-8 max-w-2xl mx-auto">
           <div className="relative">
@@ -46,8 +43,11 @@ export default function ProjectsPage() {
               type="text"
               placeholder="Search projects..."
               value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-12 pr-4 py-3 bg-[#12102d] border border-[#27234c] rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-purple-600"
+              onChange={(e) => {
+                setSearchQuery(e.target.value);
+                setCurrentPage(1);
+              }}
+              className="w-full pl-12 pr-4 py-3 bg-background/70 border border-primary/25 text-white placeholder-foreground/40 focus:outline-none focus:border-primary"
             />
           </div>
         </div>
@@ -69,7 +69,7 @@ export default function ProjectsPage() {
             <button
               onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
               disabled={currentPage === 1}
-              className="p-2 rounded-lg bg-[#12102d] border border-[#27234c] disabled:opacity-50 disabled:cursor-not-allowed hover:border-purple-600 transition-colors"
+              className="p-2 clipped-button disabled:opacity-50 disabled:cursor-not-allowed hover:border-primary transition-colors"
               aria-label="Previous page"
             >
               <ChevronLeft className="w-5 h-5" />
@@ -81,7 +81,7 @@ export default function ProjectsPage() {
                 className={`px-4 py-2 rounded-lg border transition-colors ${
                   currentPage === i + 1
                     ? 'bg-purple-600 border-purple-600'
-                    : 'bg-[#12102d] border-[#27234c] hover:border-purple-600'
+                    : 'bg-background/70 border-primary/20 hover:border-primary'
                 }`}
               >
                 {i + 1}
@@ -90,7 +90,7 @@ export default function ProjectsPage() {
             <button
               onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
               disabled={currentPage === totalPages}
-              className="p-2 rounded-lg bg-[#12102d] border border-[#27234c] disabled:opacity-50 disabled:cursor-not-allowed hover:border-purple-600 transition-colors"
+              className="p-2 clipped-button disabled:opacity-50 disabled:cursor-not-allowed hover:border-primary transition-colors"
               aria-label="Next page"
             >
               <ChevronRight className="w-5 h-5" />

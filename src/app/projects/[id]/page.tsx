@@ -43,20 +43,21 @@ export default async function Page({ params }: ProjectPageProps) {
   }
 
   return (
-    <div className="pt-20 px-4">
-      <div className="max-w-4xl mx-auto">
+    <div className="page-shell">
+      <div className="content-wrap max-w-4xl">
         <Link
           href="/projects"
-          className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-[#12102d] hover:bg-[#1a1640] border border-[#27234c] rounded-lg transition-colors"
+          className="inline-flex items-center gap-2 mb-6 px-4 py-2 clipped-button transition-colors"
         >
           <ChevronLeft className="w-4 h-4" />
           Back to Projects
         </Link>
 
-        <div className="bg-[#0a061d]/50 backdrop-blur-sm rounded-2xl p-8 border border-[#27234c]">
-          <h1 className="text-4xl font-bold text-[#e4be32] mb-4">{project.title}</h1>
+        <div className="reference-panel p-8">
+          <p className="eyebrow">Project / Case study</p>
+          <h1 className="text-4xl font-bold text-primary mb-4 mt-2">{project.title}</h1>
 
-          <div className="relative w-full h-96 mb-6 rounded-xl overflow-hidden">
+          <div className="relative w-full h-96 mb-6 overflow-hidden border border-primary/20">
             <Image
               src={project.image || `/api/placeholder/800/400`}
               alt={project.title}

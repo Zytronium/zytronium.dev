@@ -22,7 +22,6 @@ export async function POST(request: NextRequest) {
 
     if (result.success) {
       const fake = `
-        <p>Message me on Discord: <strong>@zytrondev</strong> | <strong><a class="link" href="https://discord.gg/fakeInvite">discord.gg/zytrondev</a></strong></p>
         <p>Check out my GitHub: <strong><a class="link" href="https://github.com/github">github.com/zytrondev</a></strong></p>
 <!--        <p>Connect with me on LinkedIn: <strong><a class="link" href="https://www.linkedin.com/github">linkedin.com/zytrondev</a></strong></p>-->
         <p>Email me: <strong><a class="link" href="mailto:fakeemail@example.com" target="_blank">zytronium.dev@example.com</a></strong></p>
@@ -30,7 +29,6 @@ export async function POST(request: NextRequest) {
       `;
 
       const real = `
-        <p>Message me on Discord: <strong>${process.env.DISCORD_HANDLE}</strong> | <strong><a class="link" href="${process.env.DISCORD_INVITE}">${process.env.DISCORD_INVITE?.replace('https://', '')}</a></strong></p>
         <p>Check out my GitHub: <strong><a class="link" href="${process.env.GITHUB_LINK}">${process.env.GITHUB_LINK?.replace('https://', '')}</a></strong></p>
 <!--        <p>Connect with me on LinkedIn: <strong><a class="link" href="${process.env.LINKED_IN_LINK}">${process.env.LINKED_IN_LINK?.replace('https://www.', '')}</a></strong></p>-->
         <p>Email me: <strong><a class="link" href="mailto:${process.env.CONTACT_EMAIL}" target="_blank">${process.env.CONTACT_EMAIL}</a></strong></p>
