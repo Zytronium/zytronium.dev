@@ -115,13 +115,13 @@
 .page-shell { position: relative; z-index: 1; padding: 4rem 1rem 2rem; }
 .content-wrap { max-width: 72rem; margin: 0 auto; }
 .hero-section { padding: 5rem 0 4rem; }
-.reference-hero { min-height: 34rem; display: flex; flex-direction: column; justify-content: center; }
+.reference-hero { display: flex; flex-direction: column; justify-content: center; }
 .background-grid { position: fixed; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; }
 .background-grid-lines { position: absolute; inset: 0; opacity: .8; background-image: repeating-linear-gradient(0deg, transparent 0, transparent calc(4rem - 1px), rgba(127, 9, 246, .2) 4rem), repeating-linear-gradient(90deg, transparent 0, transparent calc(4rem - 1px), rgba(0, 178, 255, .16) 4rem); }
 .background-grid-streaks { position: absolute; inset: 0; overflow: hidden; }
 .background-grid-streak { position: absolute; top: -18rem; left: calc(var(--streak-column) * 4rem); width: 2px; height: 15rem; opacity: .82; background: linear-gradient(to bottom, transparent 0%, var(--primary) 28%, var(--secondary) 72%, transparent 100%); filter: drop-shadow(0 0 5px var(--primary)) drop-shadow(0 0 12px rgba(127, 9, 246, .7)); animation: grid-streak-fall var(--streak-duration) linear var(--streak-delay) infinite; }
 .background-grid::after { position: absolute; inset: 0; z-index: 2; content: ''; background: radial-gradient(ellipse 80% 75% at 50% 25%, transparent 0%, rgba(13, 9, 37, .12) 65%, rgba(13, 9, 37, .42) 100%); }
-.hero-section h1 { max-width: 52rem; margin: .75rem 0 1.25rem; font-size: clamp(3.5rem, 10vw, 7.5rem); line-height: .92; letter-spacing: -.07em; font-weight: 700; }
+.hero-section h1 { max-width: 90vw; margin: .75rem 0 0.25rem; font-size: clamp(2.6rem, 7.5vw, 5.6rem); line-height: .92; letter-spacing: -.07em; font-weight: 700; }
 .hero-section h1 span { color: var(--primary); text-shadow: 0 0 32px rgba(0,178,255,.28); }
 .hero-lede { max-width: 36rem; color: #aec1d2; font-size: 1.15rem; line-height: 1.7; }
 .eyebrow { color: #51caff; font-size: .72rem; letter-spacing: .18em; font-weight: 700; text-transform: uppercase; }
