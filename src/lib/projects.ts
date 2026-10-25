@@ -174,16 +174,13 @@ export const projects: Project[] = [
       'Cameras mounted onto the planes are used to detect and track the opponent\'s jet, ' +
       'by locking onto lights installed on the enemy plane and sending a "hit" signal ' +
       'to the local game server. The server then sends the updated score in real time ' +
-      'to the mobile app for spectators to see. As a stretch goal, we also plan to ' +
+      'to the mobile app for spectators to see. As a stretch goal, we also planned to ' +
       'support FPV camera on the jets, live video feed of these cameras for spectators ' +
       'to watch and replay, screenshots of each hit, and more. ' +
       '\n\n' +
       '• Supports up to 16 planes per match, intentionally limiting the number of planes for safety\n' +
       '• Fully open-source and built to be hacked on\n' +
-      '• Works on RC planes, quadcopters, cars, tanks, 1:1 scale mobile surface-to-air missile launcher units, or any other RC vehicles or contraptions' +
-      '\n\n' +
-      'While our demo day was December 11th, 2025, we are still casually working on the ' +
-      'project and intend to complete it. There is no official goal for date of completion.',
+      '• Works on RC planes, quadcopters, cars, tanks, 1:1 scale mobile surface-to-air missile launcher units, or any other RC vehicles or contraptions',
     tags: ['JavaScript', 'TypeScript', 'Python', 'Next.js', 'React', 'TailwindCSS', 'Electron', 'Aviation', 'Engineering', 'Arduino', 'C++', 'Capstone'],
     links: {
       live: 'https://aeroduel.com/',
