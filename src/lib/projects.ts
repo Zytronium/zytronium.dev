@@ -1,6 +1,6 @@
 import { Project } from '@/types/project';
 
-export const networkingProjectIds = new Set(['rcon-bot', 'pycraft-rcon', 'faction-nexus']);
+export const networkingProjectIds: Set<string> = new Set([]);
 
 export const projects: Project[] = [
   {
