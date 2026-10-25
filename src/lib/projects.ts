@@ -163,10 +163,10 @@ export const projects: Project[] = [
     description:
       'Advanced RC aerial combat powered by computer vision, LAN servers, mobile apps, and custom-built RC jets. Fully open-source and built to be modded.',
     fullDescription:
-      'Aeroduel is my capstone project at Atlas School that me and 3 other software ' +
-      'engineers are currently working on. It combines hardware and software to ' +
-      'create an advanced RC aerial dogfight game with real RC planes. Players ' +
-      'can register their planes with the mobile app, host a match with the desktop ' +
+      'Aeroduel was my capstone project at Atlas School that 3 other software engineers ' +
+      'and I worked on in December 2025. It combines hardware and software to create ' +
+      'an advanced RC aerial dogfight game with real RC planes. Players can ' +
+      'register their planes with the mobile app, host a match with the desktop ' +
       'app, join matches on the local network, and compete against other players in ' +
       'a fun, safe, and engaging dogfight. The mobile app is built with React Native, ' +
       'desktop app with Electron and Next.js, and our firmware built in C++ and Python. ' +
