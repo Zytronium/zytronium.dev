@@ -3,6 +3,35 @@ import { Project } from '@/types/project';
 export const networkingProjectIds: Set<string> = new Set([]);
 
 export const projects: Project[] = [
+
+  {
+    id: 'badscript',
+    title: 'BadScript - Interpreted Scripting Language',
+    description:
+      'An experiment in building a scripting language without knowing how to do it the right way.',
+    fullDescription:
+      'Since I\'ve been learning Rust, which is a very fast, memory-safe low-level ' +
+      'programming language, I decided I wanted to try programming a language interpreter ' +
+      'in Rust. Since I know it will never be good, I decided to call it BadScript. The ' +
+      'intention is not so much to create a useful language, but instead experiment and ' +
+      'learn about how interpreters work.' +
+      '\n\n' +
+      'As of the writing of this, I haven\'t made too much progress, as it\'s turning out ' +
+      'to be more work than expected, but I\'m having fun with it.' +
+      '\n\n' +
+      'The other goal of this project is to build something with as little AI assistance ' +
+      'as possible. This is because I have been using so much AI lately that my programming ' +
+      'skills are not what they used to be, so I\'ve significantly limited my usage of AI ' +
+      'in this project to help recover, and it\'s going quite well! If I had to guess, less ' +
+      'than 20 lines, out of almost 700 (as of October 25, 2026), are AI generated. This has ' +
+      'the added bonus of me actually knowing how my code works, therefore giving me the ability ' +
+      'to troubleshoot and add features without having to rely on AI for most of it.',
+    tags: ['Rust', 'Interpreters', 'Experiments'],
+    links: {
+      github: 'https://github.com/Zytronium/badscript_lang',
+    },
+    image: '/images/project_thumbnails/badscript.webp'
+  },
   {
     id: 'luminous',
     title: 'Luminous',
@@ -42,7 +71,7 @@ export const projects: Project[] = [
         'when the user is mentioned.' +
         '\n\n' +
         'A team of volunteer alumni are actively collaborating on this project to make it our ' +
-        'own. The project has been ongoing since February, 2026.',
+        'own. The project has been ongoing since February 2026.',
     tags: ['TypeScript', 'Electron', 'Express.js', 'Next.js', 'React', 'TailwindCSS', 'Supabase', 'Database', "Python", "Discord.py", "Collaboration"],
     links: {
       github: 'https://github.com/zytronium/luminous',
